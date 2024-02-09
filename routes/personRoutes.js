@@ -8,7 +8,7 @@ router.post('/', async(req, res) => {
     try{
       const data = req.body;
       
-      const newPerson = new Person(data);
+      const newPerson = new person(data);
       const response = await newPerson.save();
       console.log('Data Saved !');
       res.status(200).json(response);
