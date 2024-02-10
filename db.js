@@ -7,8 +7,8 @@ const mongoURL = process.env.MONGODB_URL; // this is connect with mongoDb Atlas
 
 // Set up mongoDb connection
 mongoose.connect(mongoURL, {
-    useNewUrlParser: true,
-    useUnifiedTopology:true
+    // useNewUrlParser: true,    // these two are not used in latest version of nodejs
+    // useUnifiedTopology:true
 })
 
 // get the default connection
