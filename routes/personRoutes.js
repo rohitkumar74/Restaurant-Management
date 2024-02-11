@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const person = require('./../models/Person');
+const person = require('../models/person');
 const { findByIdAndDelete } = require('../models/menuItem');
 
 // Post route to add a person
