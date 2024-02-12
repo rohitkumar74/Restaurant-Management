@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const person = require('../models/person');
-const { findByIdAndDelete } = require('../models/menuItem');
 
 // Post route to add a person
 router.post('/', async(req, res) => {
@@ -62,7 +61,7 @@ router.post('/', async(req, res) => {
         })
 
         if(!response){
-            return res.status(404).json({error: 'Person Not FOund'});
+            return res.status(404).json({error: 'Person Not Found'});
         }
 
         console.log('Data Updated');
